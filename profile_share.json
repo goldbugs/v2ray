@@ -137,35 +137,31 @@
   ],
   "outbounds": [
     {
-      "server": "185.234.64.146",
-      "server_port": 2053,
-      "tag": "🇫🇷FR-185.234.64.146-0512",
-      "type": "trojan",
-      "password": "5c7941b5-c393-4eea-a76d-d44b59baf8a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "185.234.64.146",
-        "insecure": true,
-        "utls": {
-          "enabled": true
-        }
-      }
+  "server": "104.18.13.229",
+  "server_port": 2053,
+  "tag": "🏁RELAY-104.18.13.229-0916",
+  "type": "trojan",
+  "password": "Watashi_VPN",
+  "tls": {
+    "enabled": true,
+    "server_name": "t-watashi-r-jacket-o-people-jan.watashi-java.ir",
+    "insecure": true,
+    "utls": {
+      "enabled": true
+    }
+  },
+  "transport": {
+    "type": "ws",
+    "path": "/",
+    "headers": {
+      "Host": [
+        "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
+      ]
     },
-    {
-      "server": "fr1.trojanvpn.de",
-      "server_port": 2053,
-      "tag": "🇫🇷FR-185.234.64.146-0514",
-      "type": "trojan",
-      "password": "5c7941b5-c393-4eea-a76d-d44b59baf8a0",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr1.trojanvpn.de",
-        "insecure": true,
-        "utls": {
-          "enabled": true
-        }
-      }
-    },
+    "max_early_data": 2560,
+    "early_data_header_name": "Sec-WebSocket-Protocol"
+  }
+},
     {
       "server": "104.16.192.1",
       "server_port": 443,
@@ -191,78 +187,6 @@
       }
     },
     {
-      "server": "5.44.249.42",
-      "server_port": 3306,
-      "tag": "🇸🇬SG-5.44.249.42-1756",
-      "type": "trojan",
-      "password": "3c4e10af98c30972",
-      "tls": {
-        "enabled": true,
-        "server_name": "TG.WangCai2",
-        "insecure": true,
-        "utls": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/gateway/connect",
-        "headers": {
-          "Host": [
-            "TG.WangCai2"
-          ]
-        }
-      }
-    },
-        {
-      "server": "fr2-july.88888802.xyz",
-      "server_port": 443,
-      "tag": "🏁RELAY-104.21.66.223-1187",
-      "type": "trojan",
-      "password": "f2191442-1436-3d79-801e-80d8de896c73",
-      "tls": {
-        "enabled": true,
-        "server_name": "fr2-july.88888802.xyz",
-        "insecure": true,
-        "utls": {
-          "enabled": true
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/91838f3b905c42c7aa5b664b27d8193b",
-        "headers": {
-          "Host": [
-            "fr2-july.88888802.xyz"
-          ]
-        }
-      }
-    },
-{
-"server": "5.44.249.42",
-  "server_port": 3306,
-  "tag": "🔒 TR-WS-NA 🇸🇬 SG-5.44.249.42:3306",
-  "type": "trojan",
-  "password": "b84d16a244460e09",
-  "tls": {
-    "enabled": true,
-    "server_name": "TG.WangCai2",
-    "insecure": true,
-    "utls": {
-      "enabled": true
-    }
-  },
-      "transport": {
-        "type": "ws",
-        "path": "/proxyip=62.3.12.185",
-        "headers": {
-          "Host": [
-            "gcnwoegp2rjvyl7qmmy3ltqtaf3q22.pages.dev"
-          ]
-        }
-      }
-    },
-    {
       "type": "urltest",
       "tag": "urltest_out",
       "url": "https://www.gstatic.com/generate_204",
@@ -270,12 +194,8 @@
       "interrupt_exist_connections": false,
       "idle_timeout": "8h",
       "outbounds": [
-        "🇫🇷FR-185.234.64.146-0512",
-        "🇫🇷FR-185.234.64.146-0514",
-        "🏁RELAY-104.16.192.1-0998",
-        "🇸🇬SG-5.44.249.42-1756",
-        "🏁RELAY-104.21.66.223-1187",
-        "🇸🇬 SG-5.44.249.42:3306"
+        "🏁RELAY-104.18.13.229-0916",
+        "🏁RELAY-104.16.192.1-0998"
       ]
     },
     {
